@@ -12,12 +12,12 @@ $(document).ready(function(){
 	$('#addItem').click(function(){
 		addItem();
 	});
+
 });
 
 function addItem(){
 
 	var itemDesc = $('#itemInput').val();
-	var chkBox = $('<div class="itemStatus"></div>');
 	var upd = $('<div class="itemUpdate"></div>');
 	var comp = $('<div class="itemComplete"></div>');
 	var del = $('<div class="itemDelete"></div><br>');
@@ -27,12 +27,25 @@ function addItem(){
 			alert('Please enter an item before you can add it to the list');
 
 		} else {
-			$(".shoppingList").append(chkBox)
-			.append(myItem)
+			$(".shoppingList").append(myItem)
 			.append(upd)
 			.append(comp)
 			.append(del);
 			$('#itemInput').val("");
 			$('#itemInput').empty();
 		}
+
+
+		$(upd).click(function(){
+			alert('Update '+ itemDesc);
+		});
+
+		$(comp).click(function(){
+			alert('Complete ' + itemDesc);
+		});
+
+
+		$(del).click(function(){
+			alert('Delete ' + itemDesc);
+		});
 }

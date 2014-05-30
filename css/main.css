@@ -52,7 +52,7 @@ h3{
 	font-family: comic sans ms;
 }
 
-.itemStatus, .itemUpdate, .itemComplete, .itemDelete{
+.itemUpdate, .itemComplete, .itemDelete{
 	/*border: 1px solid black;*/
 	border-radius: 5px;
 	width: 2%;
@@ -62,10 +62,6 @@ h3{
 	background-repeat: no-repeat;
 	display: inline-block;
 	
-}
-
-.itemStatus{
-	display: none;
 }
 
 .itemUpdate{
