@@ -37,15 +37,19 @@ function addItem(){
 
 
 		$(upd).click(function(){
-			alert('Update '+ itemDesc);
+			alert('Updating '+ itemDesc);
 		});
 
 		$(comp).click(function(){
-			alert('Complete ' + itemDesc);
+			alert('Marking ' + itemDesc + ' Complete ');
 		});
 
 
 		$(del).click(function(){
-			alert('Delete ' + itemDesc);
+			alert('Removing ' + itemDesc);
+			$(myItem).remove();
+			$(upd).remove();
+			$(comp).remove();
+			$(del).remove();
 		});
 }
