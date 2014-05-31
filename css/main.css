@@ -38,7 +38,7 @@ h3{
 	height: 50px;*/
 }
 
-.item{
+#item{
 	border: 1px solid black;
 	border-radius: 5px;
 	margin: 1%;
@@ -52,16 +52,15 @@ h3{
 	font-family: comic sans ms;
 }
 
-.itemUpdate, .itemComplete, .itemDelete{
-	/*border: 1px solid black;*/
+.itemUpdate, .itemComplete, .itemDelete, .updateValidate, .updateCancel{
+	border: 1px solid black;
 	border-radius: 5px;
 	width: 2%;
 	height: 20px;
 	margin-left: 2%;
 	padding: 1%;
 	background-repeat: no-repeat;
-	display: inline-block;
-	
+	display: inline-block;	
 }
 
 .itemUpdate{
@@ -76,3 +75,14 @@ h3{
 	background-image: url('../images/delete.png');
 }
 
+.markComplete{
+	text-decoration: line-through;
+}
+
+.updateValidate{
+	background:blue;
+}
+
+.updateCancel{
+	background:red;
+}
