@@ -8,6 +8,8 @@ body{
 	border-radius: 5px;
 	width: 65%;
 	text-align: center;
+	background: #FFFFCC;
+	color: #808000;
 }
 
 h1,h3{
@@ -30,6 +32,8 @@ h3{
 	top: -15px;
 	margin: 5%;
 	font-family: comic sans ms;
+	color: #808000;
+	font-size: 16px;
 }
 
 #addItem{
@@ -50,6 +54,8 @@ h3{
 	position: relative;
 	top: -12px;
 	font-family: comic sans ms;
+	font-size: 16px;
+	color: #808000;
 }
 
 .itemUpdate, .itemComplete, .itemDelete, .updateValidate, .updateCancel{
@@ -77,6 +83,7 @@ h3{
 
 .markComplete{
 	text-decoration: line-through;
+	background: #F1E788;
 }
 
 .updateValidate{

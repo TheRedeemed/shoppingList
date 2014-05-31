@@ -98,6 +98,8 @@ function addItem(){
 
 		$(comp).click(function(){
 			$(myItem).toggleClass('markComplete');
+			$(upd).remove();
+			$(comp).remove();
 		});
 
 
@@ -107,4 +109,6 @@ function addItem(){
 			$(comp).remove();
 			$(del).remove();
 		});
+
+		
 }
