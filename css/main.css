@@ -53,7 +53,7 @@ h3{
 }
 
 .itemUpdate, .itemComplete, .itemDelete, .updateValidate, .updateCancel{
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	border-radius: 5px;
 	width: 2%;
 	height: 20px;
@@ -64,7 +64,7 @@ h3{
 }
 
 .itemUpdate{
-	background-image: url('../images/update.png');
+	background-image: url('../images/edit.png');
 }
 
 .itemComplete{
@@ -80,9 +80,9 @@ h3{
 }
 
 .updateValidate{
-	background:blue;
+	background-image: url('../images/update.png');
 }
 
 .updateCancel{
-	background:red;
+	background-image: url('../images/cancel.png');
 }

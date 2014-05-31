@@ -52,11 +52,14 @@ function addItem(){
 		});
 		
 		$(upd).click(function(){
+
+			var itemVal = $(myItem).val();
+
 			$(myItem).hide();
 			$(upd).hide();
 			$(comp).hide();
 			$(del).hide();
-			$(myItemEditable).show();
+			$(myItemEditable).val(itemVal).show();
 			$(updConfirm).show();
 			$(updCancel).show();
 			
@@ -64,7 +67,6 @@ function addItem(){
 			$(updConfirm).click(function(){
 
 				var updatedItemVal = $(myItemEditable).val();
-				//alert(updatedItemVal);
 
 				if(updatedItemVal == ""){
 					
